@@ -1,8 +1,7 @@
-from modules import widget
+# Информер на пайтон с веб интерфейсом
+__author__ = "Maxim "
 
-# This is my Progect "Webinfo"
-def print_hi(name):
-    print(f'Hi, {name}')
+from modules import widget
 
 if __name__ == '__main__':
     widget.start()

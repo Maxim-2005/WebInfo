@@ -3,53 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>WebInfo</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel = 'stylesheet' href = 'style.css'>
+    <link rel = 'stylesheet' href = 'css/normalize.css'>
     <script src = ell.js></script>
 </head>
 <body>
-<button style="text-align: center">Button1</button>
-<button style="text-align: right">Button2</button>
-<button style="text-align: center">Button3</button>
-<div>
-  <input type="range" name="volume"
-         min="0" max="100">
-  <label for="volume"></label>
-    <p>Select item color:</p>
-<div>
-    <input type="color" name="color1" value="#ff0000">
-    <label for="color1">Color 1</label>
-</div>
-<div>
-    <input type="color" name="color2" value="#f6b73c">
-     <label for="color2">Color 2</label>
-</div>
-</div>
+    <div class="top">
+        <h1>HelloWorld</h1>
+    </div>
 
+    <div class="row">
+        <a href="" class="button-5"><span class="link-content">Кнопка1</span></a>
+        <a href="" class="button-5"><span class="link-content">Кнопка2</span></a>
+        <a href="" class="button-5"><span class="link-content">Кнопка3</span></a>
+    </div>
 
+    <div class="cont">
+        <div class="col-left">
+            <a href="" class="button-5"><span class="link-content">Кнопка4</span></a>
+            <a href="" class="button-5"><span class="link-content">Кнопка5</span></a>
+        </div>
 
-<html>
-<head>
-<title>list</title>
-</head>
-<body>
+        <div class="col-center">
 
-	<form id="nubexForm" action="do.php">
-	</form>
+        </div>
 
-	<select name="nubexSelect" size="3" multiple form="nubexForm">
-		<option>1</option>
-		<option>2</option>
-		<option>3</option>
-		<option>4</option>
-	</select>
+        <div class="col-right">
+            <a href="" class="button-5"><span class="link-content">Кнопка6</span></a>
+            <a href="" class="button-5"><span class="link-content">Кнопка7</span></a>
+        </div>
+    </div>
 
-<textarea атрибуты>
-  Enter text
-</textarea>
-
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
+    <div class="row">
+        <a href="" class="button-5"><span class="link-content">Кнопка8</span></a>
+        <a href="" class="button-5"><span class="link-content">Кнопка9</span></a>
+        <a href="" class="button-5"><span class="link-content">Кнопка10</span></a>
+    </div>
 </body>
-</html>
-</body>
+    <script>
+        // Отправка сообщения с сайта в пайтон
+        async function call() {
+            await eel.call_in_js("hi");
+        }
+        call();
+    </script>
 </html>
