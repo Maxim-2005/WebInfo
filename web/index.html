@@ -12,17 +12,16 @@
     <div class="top">
         <h1>HelloWorld</h1>
     </div>
-
     <div class="row">
-        <a href="" class="button-5"><span class="link-content">Кнопка1</span></a>
-        <a href="" class="button-5"><span class="link-content">Кнопка2</span></a>
-        <a href="" class="button-5"><span class="link-content">Кнопка3</span></a>
+        <a onclick="call('нажата кнопка1')" class="button"/>Preview</a>
+        <a onclick="call('нажата кнопка2')" class="button"/>Preview</a>
+        <a onclick="call('нажата кнопка3')" class="button"/>Preview</a>
     </div>
 
     <div class="cont">
         <div class="col-left">
-            <a href="" class="button-5"><span class="link-content">Кнопка4</span></a>
-            <a href="" class="button-5"><span class="link-content">Кнопка5</span></a>
+            <a onclick="call('нажата кнопка4')" class="button"/>Preview</a>
+            <a onclick="call('нажата кнопка5')" class="button"/>Preview</a>
         </div>
 
         <div class="col-center">
@@ -30,22 +29,28 @@
         </div>
 
         <div class="col-right">
-            <a href="" class="button-5"><span class="link-content">Кнопка6</span></a>
-            <a href="" class="button-5"><span class="link-content">Кнопка7</span></a>
+            <a onclick="call('нажата кнопка5')" class="button"/>Preview</a>
+            <a onclick="call('нажата кнопка5')" class="button"/>Preview</a>
         </div>
     </div>
 
     <div class="row">
-        <a href="" class="button-5"><span class="link-content">Кнопка8</span></a>
-        <a href="" class="button-5"><span class="link-content">Кнопка9</span></a>
-        <a href="" class="button-5"><span class="link-content">Кнопка10</span></a>
+        <a onclick="call('нажата кнопка5')" class="button"/>Preview</a>
+        <a onclick="call('нажата кнопка5')" class="button"/>Preview</a>
+        <a onclick="call('нажата кнопка5')" class="button"/>Preview</a>
     </div>
 </body>
     <script>
         // Отправка сообщения с сайта в пайтон
-        async function call() {
-            await eel.call_in_js("hi");
+        async function call(msg) {
+            await eel.call_in_js(msg);
         }
-        call();
+
+        // Прием сообщения из пайтон
+        eel.expose(call_in_python);
+        function call_in_python(msg) {
+            console.log(msg);
+            alert(msg);
+        }
     </script>
 </html>

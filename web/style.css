@@ -19,75 +19,83 @@ body {
 
 .cont{
     display: flex;
-    height: auto;
+    height: 100px;
     text-align: center;
     border: solid 1px purple;
 }
 
 .col-left{
-    width: 20%;
+    width: 25%;
     text-align: center;
     border: solid 1px white;
 }
 
 .col-center{
-    width: 60%;
+    width: 50%;
     text-align: center;
     border: solid 1px blue;
 }
 
 .col-right{
-    width: 20%;
+    width: 25%;
     text-align: center;
     border: solid 1px cyan;
 }
 
 /* Кнопки */
-.button-5 {
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-    padding: 15px 30px;
-    color: #766AD0;
-    border: 1px solid #3A374C;
-    font-size: 14px;
-    font-weight: 700;
-    white-space: nowrap;
-    transition: .3s linear;
-}
-.button-5:before, .button-5:after, .link-content:before, .link-content:after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    width: 15px;
-    height: 15px;
-    transition: .3s linear;
-}
-.button-5:before {
-    left: -1px;
-    top: -1px;
-    border-left: 1px solid #614DFF;
-    border-top: 1px solid #614DFF;
-}
-.button-5:after {
-    bottom: -1px;
-    right: -1px;
-    border-bottom: 1px solid #614DFF;
-    border-right: 1px solid #614DFF;
-}
-.link-content:after {
-    right: -1px;
-    top: -1px;
-    border-right: 1px solid #614DFF;
-    border-top: 1px solid #614DFF;
-}
-.link-content:before {
-    left: -1px;
-    bottom: -1px;
-    border-bottom: 1px solid #614DFF;
-    border-left: 1px solid #614DFF;
-}
-.button-5:hover {
-    color: #614DFF;
-    border-color: #614DFF;
-}
+.button {
+     text-decoration:none; text-align:center;
+     margin-top: 30px;
+     padding:10px 20px;
+     border:solid 5px #999999;
+     -webkit-border-radius:50px;
+     -moz-border-radius:50px;
+     border-radius: 50px;
+     font:15px "Courier New", Courier, monospace;
+     font-weight:bold;
+     color:#ffffff;
+     background:#000000;
+     -webkit-box-shadow:0px 0px 2px #ffffff, inset 0px 0px 1px #ffffff;
+     -moz-box-shadow: 0px 0px 2px #ffffff,  inset 0px 0px 1px #ffffff;
+     box-shadow:0px 0px 2px #ffffff, inset 0px 0px 1px #ffffff;
+     text-shadow: -3px 3px 3px #858585;
+     filter: dropshadow(color=#858585, offx=-3, offy=3);
+ }
+ .button:hover {
+     padding:10px 20px;
+     border:solid 5px #999999;
+     -webkit-border-radius:50px;
+     -moz-border-radius:50px;
+     border-radius: 50px;
+     font:15px "Courier New", Courier, monospace;
+     font-weight:bold;
+     color:#ffffff;
+     background:#000000;
+     -webkit-box-shadow:0px 0px 2px #ffffff, inset 0px 0px 1px #ffffff;
+     -moz-box-shadow: 0px 0px 2px #ffffff,  inset 0px 0px 1px #ffffff;
+     box-shadow:0px 0px 2px #ffffff, inset 0px 0px 1px #ffffff;
+     opacity:0.8;
+     -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+     filter: alpha(opacity=80);
+     text-shadow: -3px 3px 3px #858585;
+     filter: dropshadow(color=#858585, offx=-3, offy=3);
+ }
+ .button:active {
+     padding:10px 20px;
+     border:solid 5px #999999;
+     -webkit-border-radius:50px;
+     -moz-border-radius:50px;
+     border-radius: 50px;
+     font:15px "Courier New", Courier, monospace;
+     font-weight:bold;
+     color:#ffffff;
+     background:#000000;
+     -webkit-box-shadow:0px 0px 2px #ffffff, inset 0px 0px 1px #ffffff;
+     -moz-box-shadow: 0px 0px 2px #ffffff,  inset 0px 0px 1px #ffffff;
+     box-shadow:0px 0px 2px #ffffff, inset 0px 0px 1px #ffffff;
+     opacity:0.25;
+     -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
+     filter: alpha(opacity=25);
+     text-shadow: -3px 3px 3px #858585;
+     filter: dropshadow(color=#858585, offx=-3, offy=3);
+ }
