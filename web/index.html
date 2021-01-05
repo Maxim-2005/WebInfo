@@ -25,6 +25,8 @@
         </div>
 
         <div class="col-center">
+            <input id="input_text" size="32">
+            <p id="text">HelloWorld</p>
 
         </div>
 
@@ -36,8 +38,8 @@
 
     <div class="row">
         <a onclick="call('нажата кнопка5')" class="button"/>Preview</a>
-        <a onclick="call('нажата кнопка5')" class="button"/>Preview</a>
-        <a onclick="call('нажата кнопка5')" class="button"/>Preview</a>
+        <a onclick="input_call()" class="button"/>Отправить</a>
+        <a onclick="call('quit')" class="button"/>Выход</a>
     </div>
 </body>
     <script>
@@ -49,8 +51,13 @@
         // Прием сообщения из пайтон
         eel.expose(call_in_python);
         function call_in_python(msg) {
-            console.log(msg);
-            alert(msg);
+            document.getElementById('text').innerHTML = msg;
+        }
+
+        //Отправка из строки ввода
+        function input_call() {
+            msg = document.getElementById('input_text').value;
+            call(msg);
         }
     </script>
 </html>
