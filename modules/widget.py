@@ -10,6 +10,8 @@ def start():
         if msg == 'quit':
             os.system("TASKKILL /F /IM Chrome.exe")
             quit()
+        elif msg.isdigit():
+            msg = int(msg)*int(msg)
         call_in_python(msg)
 
     # Отправка сообщения на сайт
